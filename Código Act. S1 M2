@@ -1,0 +1,45 @@
+"""
+EXPLORACIÓN DEL LENGUAJE Y SU CONTEXTO
+
+Python es un lenguaje de programación interpretado, de alto nivel y multiplataforma.
+- Es conocido por su sintaxis clara y legible, lo que facilita su aprendizaje.
+- Se utiliza en diversas áreas como ciencia de datos, desarrollo web, automatización y más.
+- En este caso, estamos utilizando Python 3.x.
+
+Este script incluye:
+- Declaración de variables (entero, decimal, string, booleano).
+- Uso de operadores aritméticos y lógicos.
+- Entrada del usuario para ingresar nombre y edad.
+- Estructuras condicionales (if, elif, else) para validar la mayoría de edad.
+- Impresión de mensajes con print().
+- Conversión de tipos si es necesario (int(), str()).
+"""
+
+# Declaración de variables de diferentes tipos
+entero = 10  # Variable de tipo entero
+decimal = 3.14  # Variable de tipo decimal (float)
+cadena = "Bienvenido/a"  # Variable de tipo string
+booleano = True  # Variable de tipo booleano
+
+# Uso de operadores aritméticos
+suma = entero + decimal  # Suma entre un entero y un decimal
+multiplicacion = entero * 2  # Multiplicación de un entero por 2
+
+# Solicitar entrada del usuario
+nombre = input("Ingrese su nombre: ")  # Entrada de texto (string)
+edad = int(input("Ingrese su edad: "))  # Entrada de número convertida a entero
+
+# Uso de estructuras condicionales (if, elif, else)
+if edad >= 18:  # Si la edad es mayor o igual a 18
+    print(f"Hola {nombre}, eres mayor de edad. ¡Acceso permitido!")
+elif edad > 0 and edad < 18:  # Si la edad está entre 1 y 17
+    print(f"Hola {nombre}, eres menor de edad. Acceso denegado.")
+else:  # Si la edad ingresada es inválida (menor o igual a 0)
+    print("La edad ingresada no es válida. Intente nuevamente.")
+
+# Imprimir resultados adicionales con operadores aritméticos
+print(f"\nResultados adicionales:")
+print(f"Suma de {entero} + {decimal} = {suma}")  # Muestra el resultado de la suma
+print(f"Multiplicación de {entero} * 2 = {multiplicacion}")  # Muestra el resultado de la multiplicación
+print(f"Mensaje inicial: {cadena}")  # Muestra el mensaje almacenado en la variable string
+print(f"Estado del sistema: {'Activo' if booleano else 'Inactivo'}")  # Evalúa el valor booleano
